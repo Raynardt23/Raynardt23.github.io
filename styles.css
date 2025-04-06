@@ -1,0 +1,314 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f7;
+    background-image: url("C:\Users\Ray PC\Downloads\Raynardt23.github.io\background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.background {
+
+    background-color: aquamarine;
+    background-image: url("background-high.jpg");
+    position:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    color:#f5f5f5;
+    background: rgba(210, 210, 210, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    flex: 1;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-paragraph {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.highlight {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-heading {
+    text-align: center;
+
+}
+
+/* Skills Section */
+.skills-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(210, 210, 210, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+}
+
+.skills-list {
+    display: inline-block;
+    text-align: left;
+    columns: 2;
+    column-gap: 3rem;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.skills-list li::before {
+    content: '•';
+    color: #4CAF50;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    line-height: 0;
+}
+
+/* CV Section */
+.cv-container {
+    text-align: center;
+    padding: 2.5rem;
+    background: rgba(210, 210, 210, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+.cv-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cv-container p {
+    font-size: 1.1rem;
+    color:black;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.cv-container a {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 175, 80, 0.3);
+    margin-top: 1rem;
+}
+
+.cv-container a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(74, 175, 80, 0.4);
+}
+
+/* Contact Form */
+.contact-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(210, 210, 210, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    transition: border 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(74, 175, 80, 0.2);
+}
+
+.contact-container textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contact-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 175, 80, 0.3);
+}
+
+/* My social media links */
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.linkedin-button, .email-button, .github-button {
+
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.8rem 1.5rem;
+border-radius: 5px;
+text-decoration: none;
+font-weight: 500;
+transition: all 0.2s;
+}
+
+.linkedin-button {
+    background: #0077b5;
+    color: white;
+}
+
+.email-button {
+    background: #d14836;
+    color: white;
+}
+
+.github-button {
+    background: #333;
+    color: white;
+}
+
+.linkedin-button:hover, .email-button:hover, .github-button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
